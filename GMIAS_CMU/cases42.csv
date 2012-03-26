@@ -1,0 +1,249 @@
+\\\\\\\\\\\\
+Line\Utrnc\Role\Topic\Speech Act\Text \Words \thread\thread name\induction\ownership\process\resolution
+1.0\1.0\\99.0\99.0\CASES42\\\\\\\
+2.0\2.0\\99.0\99.0\Reviewed by Minh\\\\\\\
+3.0\3.0\\99.0\99.0\2008-09-29T00:00:00\\\\\\\
+4.0\4.0\RA\99.0\99.0\Patient 60.\\\\\\\
+5.0\5.0\D\1.0\8.0\ok Mr. [name of patient] How are you feeling?\\\\\\\
+6.0\6.0\RA\99.0\99.0\Patient 60.\\\\\\\
+7.0\7.0\P\99.0\99.0\he's gone\\\\\\\
+8.0\8.0\D\1.0\3.1\Yeah. \\\\\\\
+8.0\9.0\D\1.0\1.11\ How are you feeling? \\S\\\\\
+8.0\10.0\D\3.0\1.121\This is from St. Mary's?\\1.0\form\1.0\P\P\
+9.0\11.0\P\3.0\2.13\Yes, \\1.0\\\\P\
+9.0\12.0\P\3.0\5.6\open it up.\\1.0\\\\P\
+10.0\13.0\D\3.0\6.21\ok\\1.0\\\\P\
+11.0\14.0\P\3.0\2.2\I figured you could do it; \\1.0\\\\P\
+11.0\15.0\P\3.0\6.3\I could bring it back to her.\\1.0\\\\P\
+12.0\16.0\D\3.0\3.1\Mm yes. \\1.0\\\\R\
+12.0\17.0\D\3.0\3.6\Ok no problem, uh huh.\\1.0\\\\R\
+13.0\18.0\D\5.1\1.12\Are you taking all your medications?\\2.0\adherence\3.1\D\P\
+14.0\19.0\P\5.12\2.11\Yes.\\2.0\\\\P\
+15.0\20.0\D\5.12\1.12\Everything? \\2.0\\\\P\
+15.0\21.0\D\5.12\3.6\Ok. \\2.0\\\\P\
+15.0\22.0\D\1.13\2.1\Your Tcells dropped to 112. \\3.0\\4.21\D\P\
+15.0\23.0\D\1.13\1.11\Why? \\3.0\\\\P\
+15.0\24.0\D\1.13\2.1\And your viral load130; \\3.0\\\\P\
+15.0\25.0\D\1.13\2.1\I mean your, it's not a lot, but you're not completely undetectable. \\3.0\\\\P\6.2
+15.0\26.0\D\5.1\1.11\ You're taking which one? \\2.0\\\\P\
+15.0\27.0\D\5.1\1.11\The Combivir, What else?\\2.0\\\\P\
+16.0\28.0\P\5.1\2.2\I don't know the names 2, 1, 21, \\2.0\\\\P\
+16.0\29.0\P\5.1\2.2\and another one that you gave me.\\2.0\\\\P\
+17.0\30.0\D\3.0\1.12\Did you go to the neurologist?\\4.0\neurologist\3.1\D\P\
+18.0\31.0\P\3.0\2.13\Yes.\\4.0\\\\P\
+19.0\32.0\D\3.0\3.6\Uh huh. . . . . . . .\\4.0\\\\P\
+20.0\33.0\D\1.14\1.21\How are you feeling in general?\\5.0\general\3.1\D\P\
+21.0\34.0\P\1.14\2.4\Ok.\\5.0\\\\P\
+22.0\35.0\D\5.1\1.12\Taking your medications all the time?\\2.0\\\\P\
+23.0\36.0\P\5.12\2.11\Yes.\\2.0\\\\P\
+24.0\37.0\D\5.14\1.121\You are taking the Combivir when it's supposed to be one tabled twice a day, \\2.0\\\\P\
+24.0\38.0\D\5.14\1.121\and the Kaletra should be two in the morning \\2.0\\\\P\
+24.0\39.0\D\5.14\1.121\and two at night.\\2.0\\\\P\
+25.0\40.0\P\5.14\2.13\Two at night, yeah.\\2.0\\\\P\
+26.0\41.0\D\5.14\3.6\Ok. \\2.0\\\\P\
+26.0\42.0\D\5.14\2.1\That's what you're taking\\2.0\\\\P\
+27.0\43.0\P\6.0\2.1\And then the other one that you gave me was white, \\2.0\\\\P\
+27.0\44.0\P\6.0\2.11\and I take that once a day.\\2.0\\\\P\
+28.0\45.0\D\6.0\1.121\The Bactrim, to prevent infection?\\2.0\\\\P\
+29.0\46.0\P\6.0\2.13\Yeah.\\2.0\\\\P\
+30.0\47.0\D\6.0\3.6\Exactly. \\2.0\\\\P\
+30.0\48.0\D\6.0\1.121\And the neurologist is following you with the Dilantin and the Keppra, exactly.\\4.0\\\\P\
+31.0\49.0\P\6.0\2.13\Yeah. \\4.0\\\\P\
+31.0\50.0\P\6.0\2.1\And my sleeping medicine\\4.0\\\\P\
+32.0\51.0\D\6.0\3.6\that's the one\\4.0\\\\P\
+33.0\52.0\P\6.0\2.11\the one I take one at 900 in the night.\\4.0\\\\P\
+34.0\53.0\D\3.0\1.121\That's being seen by the neurologist?\\4.0\\\\P\
+35.0\54.0\P\3.0\2.2\Well yeah, I guess so. \\4.0\\\\P\
+35.0\55.0\P\3.0\2.2\I don't know what -\\4.0\\\\P\
+36.0\56.0\D\3.0\3.6\Exactly. \\4.0\\\\P\
+36.0\57.0\D\3.0\1.12\What is your appointment at, have you taken the medications all the time?\\4.0\\\\P\
+37.0\58.0\P\6.0\2.11\Yeah.\\4.0\\\\P\
+38.0\59.0\D\6.0\3.1\Yeah. \\4.0\\\\P\5.0
+38.0\60.0\D\1.16\1.12\How much are you smoking?\\6.0\smoking\3.1\D\P\
+39.0\61.0\P\1.16\2.11\Five cigarettes a day.\\6.0\\\\P\
+40.0\62.0\D\1.16\1.12\Willing to quit or no?\\6.0\\\\P\
+41.0\63.0\P\1.16\2.13\No.\\6.0\\\\P\
+42.0\64.0\D\1.16\1.11\Why? . . . Why?\\6.0\\\\P\
+43.0\65.0\P\1.16\2.11\Well, let's see, I've been smokin' since the age of eight -\\6.0\\\\P\
+44.0\66.0\D\1.16\3.1\Mm hmm.\\6.0\\\\P\
+45.0\67.0\P\1.16\2.11\And in fact I used to smoke two packs a day -\\6.0\\\\P\
+46.0\68.0\D\6.0\2.1\Yeah, but you know, now we have very good drugs, Chantix we have very good drugs.\\6.0\\\\R\
+47.0\69.0\P\1.16\83.0\Me? \\6.0\\\\R\2.2
+47.0\70.0\P\1.16\7.0\I, I, if that's the case I would be smoking a pack a day.\\6.0\\\\P\
+48.0\71.0\D\1.16\3.1\Ok.\\6.0\\\\P\
+49.0\72.0\P\1.16\2.1\So one pack lasts me three to four days.\\6.0\\\\P\
+50.0\73.0\D\1.16\1.12\Ok, not any drugs, \\C\\\\\
+50.0\74.0\D\1.16\1.12\any alcohol? \\C\\\\\
+50.0\75.0\D\1.16\1.121\No? A\\C\\\\\
+50.0\76.0\D\6.0\1.12\nd you're taking your medications all the time. \\2.0\\\\P\5.0
+50.0\77.0\D\1.16\1.21\How is your appetite?\\C\\\\\
+51.0\78.0\P\1.16\2.4\Very well.\\C\\\\\
+52.0\79.0\D\3.0\1.12\Ok the dentist, have you seen the dentist recently?\\7.0\dentist\4.3\D\P\
+53.0\80.0\P\3.0\2.1\No.\\7.0\\\\P\
+54.0\81.0\D\3.0\1.12\You want me to send you to the dentist?\\7.0\\\\R\
+55.0\82.0\P\3.0\2.1\No.\\7.0\\\\R\
+56.0\83.0\D\3.0\3.6\Ok. \\7.0\\\\R\4.3
+56.0\84.0\D\3.0\2.1\We're doing the papers for your wheelchair, eh?\\1.0\\\\P\
+57.0\85.0\P\3.0\2.64\Oh.\\1.0\\\\P\
+58.0\86.0\D\3.0\2.1\That's in process. . . . . .\\1.0\\\\P\
+59.0\87.0\P\3.0\3.2\Here you go. . . . . . . . \\1.0\\\\P\
+59.0\88.0\P\3.0\3.2\Here.\\1.0\\\\P\
+60.0\89.0\D\3.0\3.2\Yes. . . .\\1.0\\\\P\
+61.0\90.0\P\3.0\2.4\Everything you needed. \\1.0\\\\P\
+61.0\91.0\P\3.0\2.2\I know, I\\1.0\\\\P\
+62.0\92.0\D\3.0\3.1\yeah\\1.0\\\\P\
+63.0\93.0\P\3.0\2.1\they said you have to do something. \\1.0\\\\P\
+63.0\94.0\P\3.0\2.2\The last page, or . . . . \\1.0\\\\P\
+63.0\95.0\P\3.0\3.2\no. . . .\\1.0\\\\P\
+63.0\96.0\P\3.0\3.2\one, two, three. . .keep going. \\1.0\\\\P\
+63.0\97.0\P\3.0\1.12\That one. . .  right? \\1.0\\\\P\
+63.0\98.0\P\3.0\1.12\That's right? . . . . .  \\1.0\\\\P\
+63.0\99.0\P\3.0\2.44\I'm sorry. . . . . \\1.0\\\\P\
+63.0\100.0\P\99.0\99.0\[Doctor is looking through some documents] \\1.0\\\\99.0\
+63.0\101.0\P\4.0\2.1\It's like you don't know how long it took me to get here this morning. . . . . \\1.0\\\\P\
+63.0\102.0\P\4.0\2.1\An hour and fifteen minutes.\\1.0\\\\P\
+64.0\103.0\\99.0\99.0\[12 seconds silence]\\1.0\\\\99.0\
+65.0\104.0\P\3.0\3.2\Yeah, but she told me to give you that, even though . . . that's it?\\1.0\\\\P\
+66.0\105.0\D\3.0\2.1\Yeah, they want me to put just these two things.\\1.0\\\\P\
+67.0\106.0\P\3.0\1.12\Just these two?\\1.0\\\\P\
+68.0\107.0\D\3.0\2.1\Yeah according to this yeah\\1.0\\\\R\4.2
+69.0\108.0\\99.0\99.0\[10 seconds silence]\\1.0\\\\99.0\
+70.0\109.0\D\83.0\83.0\I'm taking the other four months, uh \\1.0\\\\83.0\
+70.0\110.0\D\3.3\83.0\ did we get into prescriptions or no?\\8.0\prescriptions3.1\\D\P\
+71.0\111.0\P\3.3\83.0\Huh?\\8.0\\\\P\
+72.0\112.0\D\3.3\1.12\Do you need prescriptions today or you have?\\8.0\\\\P\
+73.0\113.0\P\3.3\3.2\Uh . . . . \\8.0\\\\P\
+73.0\114.0\P\3.3\2.1\I have like two left.\\8.0\\\\P\
+74.0\115.0\D\3.3\1.122\Two refills, or?\\8.0\\\\P\
+75.0\116.0\P\3.3\2.1\Um, the refills, uh, \\8.0\\\\P\
+75.0\117.0\P\3.3\2.1\and the AIDS medicine.\\8.0\\\\P\
+76.0\118.0\D\3.3\6.3\Let me check now.\\8.0\\\\P\
+77.0\119.0\\99.0\99.0\[26 seconds silence]\\99.0\\\\\
+78.0\120.0\D\1.14\1.11\Your elbow? \\9.0\elbow\3.1\D\P\
+78.0\121.0\D\1.14\1.11\The problem is which one?\\9.0\\\\P\
+79.0\122.0\P\1.14\82.0\That might all have the elbow \\9.0\\\\P\
+79.0\123.0\P\1.14\2.1\and my right side as 'no feeling'.\\9.0\\\\P\6.2
+80.0\124.0\\99.0\99.0\[30 seconds silence]\\99.0\\\\\
+81.0\125.0\D\6.0\1.11\Do you have any Coumadin then now or no?\\8.0\\\\P\
+82.0\126.0\P\2.6\2.5\No I'm trying to get, \\10.0\attendant\1.0\P\P\
+82.0\127.0\P\2.6\2.5\I need to get a home attendant, \\10.0\\\\P\
+82.0\128.0\P\2.6\2.5\but not with the visiting nurse; a regular home attendant. \\10.0\\\\P\
+82.0\129.0\P\2.6\2.11\'Cause I take my medicine on time. . . . . \\10.0\\\\P\
+82.0\130.0\P\2.6\2.4\I need somebody to help clean my room, \\10.0\\\\P\
+82.0\131.0\P\2.6\2.4\do my laundry, \\10.0\\\\P\
+82.0\132.0\P\2.6\2.4\do the dishes -\\10.0\\\\P\
+83.0\133.0\D\2.6\1.11\Are you already, who's your social worker?  \\10.0\\\\P\
+83.0\134.0\D\2.6\1.11\He's giving, no?\\10.0\\\\P\
+84.0\135.0\P\2.6\3.1\Yeah. . . .\\10.0\\\\P\
+85.0\136.0\D\2.6\1.11\What's your address?\\1.0\\\\\
+86.0\137.0\P\99.0\2.1\###########.\\1.0\\\\\
+87.0\138.0\\99.0\99.0\[Phone rings]\\99.0\\\\\
+88.0\139.0\D\99.0\99.0\Hello? Yes? [name] he canceled, he changed his mind. He tell everything was on, he said he not here all day, he said, "Give me my prescription," so I tell you they are going to be delivered to your house, "No, I want to pick them up now," I'm in a wheelchair, so it was a drama, whole drama. I think it's a little bit of dementia because he asked me first that he wants our pharmacy.  "Do you have something here? Told him it's not here, but it's like if it here, because I leave at the house then, it wasn't delivered. Then he started with the Oxycotin, so I told him I cannot.  Everything went bad afterwards.  Ok bye. Bye bye.\\99.0\\\\\
+89.0\140.0\\99.0\99.0\[20 seconds silence]\\99.0\\\\\
+90.0\141.0\P\3.0\3.2\Oh . . .Listen -\\1.0\\\\P\
+91.0\142.0\D\3.0\3.2\Yes, one second.\\1.0\\\\P\
+92.0\143.0\P\3.0\2.1\That's gonna be my, my phone number.\\1.0\\\\P\
+93.0\144.0\D\3.0\5.2\You will update that in the front desk, ok? \\1.0\\\\R\
+93.0\145.0\D\3.0\5.4\Update that before you leave, ok? \\1.0\\\\R\
+93.0\146.0\D\3.0\5.2\With, ok? \\1.0\\\\R\
+93.0\147.0\D\3.0\5.2\In the reception desk, they are the ones -\\1.0\\\\P\
+94.0\148.0\P\3.0\2.2\Well I don't know the number. \\1.0\\\\P\
+94.0\149.0\P\3.0\2.2\I can't -\\1.0\\\\P\
+95.0\150.0\D\3.0\5.4\Give it to the reception, that form, so, one second -\\1.0\\\\R\1.3
+96.0\151.0\P\3.0\1.122\This? \\1.0\\\\P\
+96.0\152.0\P\3.0\1.12\Well my are you giving it to me like this? \\1.0\\\\P\
+96.0\153.0\P\3.0\2.11\I didn't give it to you like this.\\1.0\\\\P\
+97.0\154.0\\99.0\99.0\[12 seconds silence]\\1.0\\\\P\
+98.0\155.0\P\3.0\1.11\Where's the other one? . . . . \\1.0\\\\P\
+98.0\156.0\P\3.0\1.11\Where's the paper?\\1.0\\\\P\
+99.0\157.0\D\3.0\2.2\I don't know, maybe it's there; \\1.0\\\\P\
+99.0\158.0\D\3.0\2.2\I don't have anything.\\1.0\\\\P\
+100.0\159.0\\99.0\99.0\[37 seconds silence]\\99.0\\\\\
+101.0\160.0\P\1.14\2.1\Oh and, I've been uh urinating on myself accidentally, \\11.0\incontinence\1.0\P\P\
+101.0\161.0\P\1.14\2.1\because I try not to drink \\11.0\\\\P\
+101.0\162.0\P\1.14\2.1\and you wanted nothing when I'm out, \\11.0\\\\P\
+101.0\163.0\P\1.14\2.1\and then when I do drink water or soda, \\11.0\\\\P\
+101.0\164.0\P\1.14\2.12\I um urinate on myself. \\11.0\\\\P\
+101.0\165.0\P\1.14\2.4\ So I need the Pamper that I could wear, you know -\\11.0\\\\P\
+102.0\166.0\D\1.14\6.21\Ok, no problem.\\11.0\\\\R\
+103.0\167.0\P\3.0\5.1\You could have them deliver it, the Pampers, to where I live.\\11.0\\\\P\
+104.0\168.0\D\3.3\6.3\I will give you the prescription, one sec.\\11.0\\\\R\4.1
+105.0\169.0\\99.0\99.0\[22 seconds silence]\\99.0\\\\\
+106.0\170.0\D\3.3\2.11\I'm changing all your medications for next time\\8.0\\\\P\
+107.0\171.0\\99.0\99.0\[Knock on door]\\99.0\\\\\
+108.0\172.0\D\99.0\99.0\Come in.\\99.0\\\\\
+109.0\173.0\UF\99.0\99.0\[6w]\\99.0\\\\\
+110.0\174.0\\99.0\99.0\[Doctor steps outside 11:45]\\99.0\\\\\
+111.0\175.0\\99.0\99.0\[35 seconds silence]\\99.0\\\\\
+112.0\176.0\\99.0\99.0\[Doctor returns 12:20]\\99.0\\\\\
+113.0\177.0\D\83.0\5.2\Please Come here.  \\83.0\\\\\
+113.0\178.0\D\83.0\5.4\Come here\\83.0\\\\\
+114.0\179.0\\99.0\99.0\[32 seconds silence]\\99.0\\\\\
+115.0\180.0\P\3.1\1.12\Why don't you get the electronic one?\\X\\\\\
+116.0\181.0\D\3.1\6.12\Ok, take off, let me check; \\X\\\\\
+116.0\182.0\D\3.1\6.12\let them check your blood pressure.\\X\\\\\
+117.0\183.0\\99.0\99.0\[10 seconds silence]\\X\\\\\
+118.0\184.0\D\3.1\5.4\Open your mouth, say 'ah'.\\X\\\\\
+119.0\185.0\P\99.0\99.0\Aah.\\X\\\\\
+120.0\186.0\D\1.14\2.66\No thrust, that's good\\12.0\thrust\4.4\D\P\
+121.0\187.0\P\1.14\1.11\What's that mean? \\12.0\\\\P\
+121.0\188.0\P\1.14\2.1\But I, I never had a, where they take out the tonsils? \\12.0\\\\P\
+121.0\189.0\P\1.14\2.2\I think I still have my tonsils, \\12.0\\\\P\
+121.0\190.0\P\1.14\2.2\'cause I don't remember ever having them taken out.\\12.0\\\\P\
+122.0\191.0\D\1.14\3.1\mm hmm. \\12.0\\\\P\5.0
+122.0\192.0\D\3.1\5.4\Take a deep breath, \\X\\\\\
+122.0\193.0\D\3.1\5.4\take a deep breath. \\X\\\\\
+122.0\194.0\D\3.1\5.4\Again, \\X\\\\\
+122.0\195.0\D\3.1\5.4\again, \\X\\\\\
+122.0\196.0\D\3.1\5.4\again\\X\\\\\
+123.0\197.0\\99.0\99.0\[1 minute silence]\\99.0\\\\\
+124.0\198.0\D\99.0\99.0\ok? [silence for 30 seconds] \\99.0\\\\\
+124.0\199.0\D\3.0\5.4\come with me\\W\\\\\
+125.0\200.0\P\83.0\83.0\Hello?\\W\\\\\
+126.0\201.0\D\3.0\5.4\Come with me.\\W\\\\\
+127.0\202.0\P\3.0\1.11\What about my stuff?\\W\\\\\
+128.0\203.0\D\3.0\1.11\What stuff? \\W\\\\\
+128.0\204.0\D\3.0\3.6\Oh yeah yeah, ok\\W\\\\\
+129.0\205.0\P\3.0\3.2\But\\W\\\\\
+130.0\206.0\D\3.0\5.4\come bring it here. \\W\\\\\
+130.0\207.0\D\3.0\6.12\ Let me speak with the nurse. \\T\\\\\
+130.0\208.0\D\3.0\5.4\One second.\\T\\\\\
+131.0\209.0\\99.0\99.0\[32 seconds silence]\\99.0\\\\\
+132.0\210.0\D\3.0\5.4\Come with me, \\W\\\\\
+132.0\211.0\D\3.0\6.12\Let me give you your things. . . . .\\8.0\\\\R\4.2
+133.0\212.0\P\3.0\1.11\Alright, that paper, the white one?\\8.0\\\\P\
+134.0\213.0\D\3.0\3.2\Yes.\\8.0\\\\P\
+135.0\214.0\P\3.0\2.11\I gotta put it in this. \\8.0\\\\P\
+135.0\215.0\P\3.0\2.1\This one goes in the big one. . . .\\8.0\\\\P\
+136.0\216.0\D\3.0\1.11\Ok, and the white one?\\8.0\\\\P\
+137.0\217.0\P\3.0\2.1\In right there. \\8.0\\\\P\
+137.0\218.0\P\3.0\5.6\Yeah, and you could lock the thing. . . . . . . . .\\8.0\\\\P\
+138.0\219.0\D\3.3\2.1\Have your prescriptions. . . . . . .\\8.0\\\\P\
+139.0\220.0\P\6.0\1.11\You gave me new sleeping medicine?\\8.0\\\\P\
+140.0\221.0\D\6.0\2.11\No I cannot this, \\8.0\\\\P\
+140.0\222.0\D\6.0\6.12\I gave you what you were getting before.\\8.0\\\\P\
+141.0\223.0\P\6.0\3.6\Yeah, \\8.0\\\\P\
+141.0\224.0\P\6.0\2.121\but I'm gonna get the sleeping medicine too\\8.0\\\\P\
+142.0\225.0\D\6.0\1.11\I was giving you this, ok? \\8.0\\\\P\
+142.0\226.0\D\6.0\1.11\And late at night, yes?\\8.0\\\\P\
+143.0\227.0\P\6.0\2.13\Yeah the one at night.\\8.0\\\\P\
+144.0\228.0\D\3.0\2.1\Yes, yes. [4w], everything is here. \\8.0\\\\P\
+144.0\229.0\D\3.0\1.32\Ok?\\8.0\\\\P\
+145.0\230.0\P\3.0\2.2\Ok.\\8.0\\\\P\
+146.0\231.0\D\3.0\1.32\Ok? \\8.0\\\\P\
+146.0\232.0\D\3.0\1.11\Did you make another appointment with me? \\13.0\next apptmt\3.1\D\P\
+146.0\233.0\D\3.0\5.4\One second.\\13.0\\\\P\
+147.0\234.0\P\3.0\2.1\On the 7th is my birthday, so, I'm gonna be 42, so.\\13.0\\\\P\
+148.0\235.0\\99.0\99.0\[25 seconds silence]\\99.0\\\\\
+149.0\236.0\P\3.0\1.11\Could, you have a garbage? \\T\\\\\
+149.0\237.0\P\3.0\1.11\Doctor?\\T\\\\\
+150.0\238.0\\99.0\99.0\[15 seconds silence]\\99.0\\\\\
+151.0\239.0\D\3.0\1.12\You have an appointment with the neurologist?\\13.0\\\\P\
+152.0\240.0\P\3.0\2.2\On the 19th, is it?\\13.0\\\\P\
+153.0\241.0\D\3.0\3.6\Ok.  \\13.0\\\\P\
+153.0\242.0\D\3.0\2.1\I can not, the system went down so I cannot check it now, \\13.0\\\\P\
+153.0\243.0\D\3.0\5.4\but come with me, \\13.0\\\\P\
+153.0\244.0\D\3.0\2.121\we'll make another one\\13.0\\\\R\4.5
+154.0\245.0\\99.0\99.0\[Doctor and patient depart 18:30]\\99.0\\\\\
+155.0\246.0\\99.0\99.0\[2 minutes 40 seconds to end]\\99.0\\\\\
+156.0\247.0\\99.0\99.0\[End of audio]\\99.0\\\\\

@@ -1,0 +1,249 @@
+#,,
+Text #Role,Topic,Speech Act
+CASES42#,99.0,99.0
+Reviewed by Minh#,99.0,99.0
+2008-09-29T00:00:00#,99.0,99.0
+Patient 60.#RA,99.0,99.0
+ok Mr. [name of patient] How are you feeling?#D,1.0,8.0
+Patient 60.#RA,99.0,99.0
+he's gone#P,99.0,99.0
+Yeah. #D,1.0,3.1
+ How are you feeling? #D,1.0,1.11
+This is from St. Mary's?#D,3.0,1.121
+Yes, #P,3.0,2.13
+open it up.#P,3.0,5.6
+ok#D,3.0,6.21
+I figured you could do it; #P,3.0,2.2
+I could bring it back to her.#P,3.0,6.3
+Mm yes. #D,3.0,3.1
+Ok no problem, uh huh.#D,3.0,3.6
+Are you taking all your medications?#D,5.1,1.12
+Yes.#P,5.12,2.11
+Everything? #D,5.12,1.12
+Ok. #D,5.12,3.6
+Your Tcells dropped to 112. #D,1.13,2.1
+Why? #D,1.13,1.11
+And your viral load130; #D,1.13,2.1
+I mean your, it's not a lot, but you're not completely undetectable. #D,1.13,2.1
+ You're taking which one? #D,5.1,1.11
+The Combivir, What else?#D,5.1,1.11
+I don't know the names 2, 1, 21, #P,5.1,2.2
+and another one that you gave me.#P,5.1,2.2
+Did you go to the neurologist?#D,3.0,1.12
+Yes.#P,3.0,2.13
+Uh huh. . . . . . . .#D,3.0,3.6
+How are you feeling in general?#D,1.14,1.21
+Ok.#P,1.14,2.4
+Taking your medications all the time?#D,5.1,1.12
+Yes.#P,5.12,2.11
+You are taking the Combivir when it's supposed to be one tabled twice a day, #D,5.14,1.121
+and the Kaletra should be two in the morning #D,5.14,1.121
+and two at night.#D,5.14,1.121
+Two at night, yeah.#P,5.14,2.13
+Ok. #D,5.14,3.6
+That's what you're taking#D,5.14,2.1
+And then the other one that you gave me was white, #P,6.0,2.1
+and I take that once a day.#P,6.0,2.11
+The Bactrim, to prevent infection?#D,6.0,1.121
+Yeah.#P,6.0,2.13
+Exactly. #D,6.0,3.6
+And the neurologist is following you with the Dilantin and the Keppra, exactly.#D,6.0,1.121
+Yeah. #P,6.0,2.13
+And my sleeping medicine#P,6.0,2.1
+that's the one#D,6.0,3.6
+the one I take one at 900 in the night.#P,6.0,2.11
+That's being seen by the neurologist?#D,3.0,1.121
+Well yeah, I guess so. #P,3.0,2.2
+I don't know what -#P,3.0,2.2
+Exactly. #D,3.0,3.6
+What is your appointment at, have you taken the medications all the time?#D,3.0,1.12
+Yeah.#P,6.0,2.11
+Yeah. #D,6.0,3.1
+How much are you smoking?#D,1.16,1.12
+Five cigarettes a day.#P,1.16,2.11
+Willing to quit or no?#D,1.16,1.12
+No.#P,1.16,2.13
+Why? . . . Why?#D,1.16,1.11
+Well, let's see, I've been smokin' since the age of eight -#P,1.16,2.11
+Mm hmm.#D,1.16,3.1
+And in fact I used to smoke two packs a day -#P,1.16,2.11
+Yeah, but you know, now we have very good drugs, Chantix we have very good drugs.#D,6.0,2.1
+Me? #P,1.16,83.0
+I, I, if that's the case I would be smoking a pack a day.#P,1.16,7.0
+Ok.#D,1.16,3.1
+So one pack lasts me three to four days.#P,1.16,2.1
+Ok, not any drugs, #D,1.16,1.12
+any alcohol? #D,1.16,1.12
+No? A#D,1.16,1.121
+nd you're taking your medications all the time. #D,6.0,1.12
+How is your appetite?#D,1.16,1.21
+Very well.#P,1.16,2.4
+Ok the dentist, have you seen the dentist recently?#D,3.0,1.12
+No.#P,3.0,2.1
+You want me to send you to the dentist?#D,3.0,1.12
+No.#P,3.0,2.1
+Ok. #D,3.0,3.6
+We're doing the papers for your wheelchair, eh?#D,3.0,2.1
+Oh.#P,3.0,2.64
+That's in process. . . . . .#D,3.0,2.1
+Here you go. . . . . . . . #P,3.0,3.2
+Here.#P,3.0,3.2
+Yes. . . .#D,3.0,3.2
+Everything you needed. #P,3.0,2.4
+I know, I#P,3.0,2.2
+yeah#D,3.0,3.1
+they said you have to do something. #P,3.0,2.1
+The last page, or . . . . #P,3.0,2.2
+no. . . .#P,3.0,3.2
+one, two, three. . .keep going. #P,3.0,3.2
+That one. . .  right? #P,3.0,1.12
+That's right? . . . . .  #P,3.0,1.12
+I'm sorry. . . . . #P,3.0,2.44
+[Doctor is looking through some documents] #P,99.0,99.0
+It's like you don't know how long it took me to get here this morning. . . . . #P,4.0,2.1
+An hour and fifteen minutes.#P,4.0,2.1
+[12 seconds silence]#,99.0,99.0
+Yeah, but she told me to give you that, even though . . . that's it?#P,3.0,3.2
+Yeah, they want me to put just these two things.#D,3.0,2.1
+Just these two?#P,3.0,1.12
+Yeah according to this yeah#D,3.0,2.1
+[10 seconds silence]#,99.0,99.0
+I'm taking the other four months, uh #D,83.0,83.0
+ did we get into prescriptions or no?#D,3.3,83.0
+Huh?#P,3.3,83.0
+Do you need prescriptions today or you have?#D,3.3,1.12
+Uh . . . . #P,3.3,3.2
+I have like two left.#P,3.3,2.1
+Two refills, or?#D,3.3,1.122
+Um, the refills, uh, #P,3.3,2.1
+and the AIDS medicine.#P,3.3,2.1
+Let me check now.#D,3.3,6.3
+[26 seconds silence]#,99.0,99.0
+Your elbow? #D,1.14,1.11
+The problem is which one?#D,1.14,1.11
+That might all have the elbow #P,1.14,82.0
+and my right side as 'no feeling'.#P,1.14,2.1
+[30 seconds silence]#,99.0,99.0
+Do you have any Coumadin then now or no?#D,6.0,1.11
+No I'm trying to get, #P,2.6,2.5
+I need to get a home attendant, #P,2.6,2.5
+but not with the visiting nurse; a regular home attendant. #P,2.6,2.5
+'Cause I take my medicine on time. . . . . #P,2.6,2.11
+I need somebody to help clean my room, #P,2.6,2.4
+do my laundry, #P,2.6,2.4
+do the dishes -#P,2.6,2.4
+Are you already, who's your social worker?  #D,2.6,1.11
+He's giving, no?#D,2.6,1.11
+Yeah. . . .#P,2.6,3.1
+What's your address?#D,2.6,1.11
+###########.#P,99.0,2.1
+[Phone rings]#,99.0,99.0
+Hello? Yes? [name] he canceled, he changed his mind. He tell everything was on, he said he not here all day, he said, "Give me my prescription," so I tell you they are going to be delivered to your house, "No, I want to pick them up now," I'm in a wheelchair, so it was a drama, whole drama. I think it's a little bit of dementia because he asked me first that he wants our pharmacy.  "Do you have something here? Told him it's not here, but it's like if it here, because I leave at the house then, it wasn't delivered. Then he started with the Oxycotin, so I told him I cannot.  Everything went bad afterwards.  Ok bye. Bye bye.#D,99.0,99.0
+[20 seconds silence]#,99.0,99.0
+Oh . . .Listen -#P,3.0,3.2
+Yes, one second.#D,3.0,3.2
+That's gonna be my, my phone number.#P,3.0,2.1
+You will update that in the front desk, ok? #D,3.0,5.2
+Update that before you leave, ok? #D,3.0,5.4
+With, ok? #D,3.0,5.2
+In the reception desk, they are the ones -#D,3.0,5.2
+Well I don't know the number. #P,3.0,2.2
+I can't -#P,3.0,2.2
+Give it to the reception, that form, so, one second -#D,3.0,5.4
+This? #P,3.0,1.122
+Well my are you giving it to me like this? #P,3.0,1.12
+I didn't give it to you like this.#P,3.0,2.11
+[12 seconds silence]#,99.0,99.0
+Where's the other one? . . . . #P,3.0,1.11
+Where's the paper?#P,3.0,1.11
+I don't know, maybe it's there; #D,3.0,2.2
+I don't have anything.#D,3.0,2.2
+[37 seconds silence]#,99.0,99.0
+Oh and, I've been uh urinating on myself accidentally, #P,1.14,2.1
+because I try not to drink #P,1.14,2.1
+and you wanted nothing when I'm out, #P,1.14,2.1
+and then when I do drink water or soda, #P,1.14,2.1
+I um urinate on myself. #P,1.14,2.12
+ So I need the Pamper that I could wear, you know -#P,1.14,2.4
+Ok, no problem.#D,1.14,6.21
+You could have them deliver it, the Pampers, to where I live.#P,3.0,5.1
+I will give you the prescription, one sec.#D,3.3,6.3
+[22 seconds silence]#,99.0,99.0
+I'm changing all your medications for next time#D,3.3,2.11
+[Knock on door]#,99.0,99.0
+Come in.#D,99.0,99.0
+[6w]#UF,99.0,99.0
+[Doctor steps outside 11:45]#,99.0,99.0
+[35 seconds silence]#,99.0,99.0
+[Doctor returns 12:20]#,99.0,99.0
+Please Come here.  #D,83.0,5.2
+Come here#D,83.0,5.4
+[32 seconds silence]#,99.0,99.0
+Why don't you get the electronic one?#P,3.1,1.12
+Ok, take off, let me check; #D,3.1,6.12
+let them check your blood pressure.#D,3.1,6.12
+[10 seconds silence]#,99.0,99.0
+Open your mouth, say 'ah'.#D,3.1,5.4
+Aah.#P,99.0,99.0
+No thrust, that's good#D,1.14,2.66
+What's that mean? #P,1.14,1.11
+But I, I never had a, where they take out the tonsils? #P,1.14,2.1
+I think I still have my tonsils, #P,1.14,2.2
+'cause I don't remember ever having them taken out.#P,1.14,2.2
+mm hmm. #D,1.14,3.1
+Take a deep breath, #D,3.1,5.4
+take a deep breath. #D,3.1,5.4
+Again, #D,3.1,5.4
+again, #D,3.1,5.4
+again#D,3.1,5.4
+[1 minute silence]#,99.0,99.0
+ok? [silence for 30 seconds] #D,99.0,99.0
+come with me#D,3.0,5.4
+Hello?#P,83.0,83.0
+Come with me.#D,3.0,5.4
+What about my stuff?#P,3.0,1.11
+What stuff? #D,3.0,1.11
+Oh yeah yeah, ok#D,3.0,3.6
+But#P,3.0,3.2
+come bring it here. #D,3.0,5.4
+ Let me speak with the nurse. #D,3.0,6.12
+One second.#D,3.0,5.4
+[32 seconds silence]#,99.0,99.0
+Come with me, #D,3.0,5.4
+Let me give you your things. . . . .#D,3.0,6.12
+Alright, that paper, the white one?#P,3.0,1.11
+Yes.#D,3.0,3.2
+I gotta put it in this. #P,3.0,2.11
+This one goes in the big one. . . .#P,3.0,2.1
+Ok, and the white one?#D,3.0,1.11
+In right there. #P,3.0,2.1
+Yeah, and you could lock the thing. . . . . . . . .#P,3.0,5.6
+Have your prescriptions. . . . . . .#D,3.3,2.1
+You gave me new sleeping medicine?#P,6.0,1.11
+No I cannot this, #D,6.0,2.11
+I gave you what you were getting before.#D,6.0,6.12
+Yeah, #P,6.0,3.6
+but I'm gonna get the sleeping medicine too#P,6.0,2.121
+I was giving you this, ok? #D,6.0,1.11
+And late at night, yes?#D,6.0,1.11
+Yeah the one at night.#P,6.0,2.13
+Yes, yes. [4w], everything is here. #D,3.0,2.1
+Ok?#D,3.0,1.32
+Ok.#P,3.0,2.2
+Ok? #D,3.0,1.32
+Did you make another appointment with me? #D,3.0,1.11
+One second.#D,3.0,5.4
+On the 7th is my birthday, so, I'm gonna be 42, so.#P,3.0,2.1
+[25 seconds silence]#,99.0,99.0
+Could, you have a garbage? #P,3.0,1.11
+Doctor?#P,3.0,1.11
+[15 seconds silence]#,99.0,99.0
+You have an appointment with the neurologist?#D,3.0,1.12
+On the 19th, is it?#P,3.0,2.2
+Ok.  #D,3.0,3.6
+I can not, the system went down so I cannot check it now, #D,3.0,2.1
+but come with me, #D,3.0,5.4
+we'll make another one#D,3.0,2.121
+[Doctor and patient depart 18:30]#,99.0,99.0
+[2 minutes 40 seconds to end]#,99.0,99.0
+[End of audio]#,99.0,99.0

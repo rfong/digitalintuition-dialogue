@@ -1,0 +1,3 @@
+run parser.sh if you need to reparse CSVs
+run nltk_test.py to dump word frequency dists
+
