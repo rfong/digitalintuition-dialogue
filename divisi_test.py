@@ -7,13 +7,21 @@ assocmat = assocU.multiply(np.exp(assocS)).normalize_rows(offset=.00001)
 
 limit = 20
 
-# input terms
-terms = [('I',1), ('feel',1), ('sick',1)]
+# parser
+# output:
+#  doctors, patients = list of sentences (ists of terms)
+terms = { 'doctors':[], 'patients':[]}
 
+# weight terms by sqrt of frequency
+terms = [(term, 1) for term in terms]
+
+
+# anjali
 vec = divisi2.DenseVector(np.zeros((150,)))
-for term, weight in terms:
-  if term in assocmat.row_labels:
-    vec += assocmat.row_named(term) * weight
+for group in term.items():
+  for term, weight in group:
+    if term in assocmat.row_labels:
+      vec += assocmat.row_named(term) * weight
 similar = assocmat.dot(vec)
 top_items = similar.top_items(limit)
 
