@@ -1,10 +1,13 @@
-import os
 import numpy
 import nltk
+
+import os
+import csv
 
 from collections import defaultdict
 from nltk.probability import *
 
+use_pos = False
 
 def main():
   input_files = [] 
@@ -27,8 +30,12 @@ def main():
       print attr, tag
       fd = nltk.FreqDist()
       for utt in get_utts(attr, tag):
-        for word in nltk.word_tokenize( utt['text'] ):
-          fd.inc(word)
+        if use_pos:
+          for word in nltk.pos_tag(nltk.word_tokenize( utt['text'] )):
+            fd.inc(word)
+        else:
+          for word in nltk.word_tokenize( utt['text'] ):
+            fd.inc(word)
       print dict(fd.items()[:30])
 
 
