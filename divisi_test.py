@@ -13,16 +13,32 @@ limit = 20
 terms = { 'doctors':[], 'patients':[]}
 
 # weight terms by sqrt of frequency
-terms = [(term, 1) for term in terms]
+#terms = [(term, 1) for term in terms]
 
+allTerms = terms.get('doctors') + terms.get('patients')
+freqDict = {}
+numUniqueTerms = 0
+for term in allTerms:
+  if freqDict.has_key(term):
+    freqDict[term] += 1
+  else:
+    freqDict[term] = 1
+  numUniqueTerms += 1
+#freqDict = {term:(freqDict.get(term)/numUniqueTerms)
 
 # anjali
 vec = divisi2.DenseVector(np.zeros((150,)))
 for group in term.items():
-  for term, weight in group:
+  for term in group:
     if term in assocmat.row_labels:
-      vec += assocmat.row_named(term) * weight
-similar = assocmat.dot(vec)
-top_items = similar.top_items(limit)
+      vec += assocmat.row_named(term) * 1.0
 
-print assocmat.row_named('happy')
+happy = assocmat.row_named('happy')
+sad = assocmat.row_named('sad')
+
+similarHappy = happy.dot(vec)
+similarSad = sad.dot(vec)
+
+print "Happy Similarity: " + str(similarHappy)
+print "Sad Similarity: " + str(similarSad)
+
