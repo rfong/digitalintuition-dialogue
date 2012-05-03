@@ -8,7 +8,7 @@ assocmat = assocU.multiply(np.exp(assocS)).normalize_rows(offset=.00001)
 limit = 20
 
 # input terms
-terms = ['I', 'feel', 'sick']
+terms = [('I',1), ('feel',1), ('sick',1)]
 
 vec = divisi2.DenseVector(np.zeros((150,)))
 for term, weight in terms:
