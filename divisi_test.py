@@ -32,22 +32,35 @@ def main():
   concepts = [line.strip() for line in open('concepts.txt', 'r').readlines()]
   concepts = [ (line.split(';')[0].split(','), line.split(';')[1].split(',')) for line in concepts]
   
+  windowSize = 10
   # weight terms by function of frequency
   for group, terms in allTerms.iteritems():
     print group
+
+    # get all frequencies
+    freqDict = {}
     for sentence in terms:
-      freqDict = {}
-      if len(sentence)==0:
-        continue
       for term in sentence:
         freqDict[term] = freqDict.get(term, 0) + 1
-      # let's normalize to keep the final score down
-      maximum = max(freqDict.values())
-      for term in freqDict.keys():
-        freqDict[term] = weight_fn(freqDict.get(term)) / weight_fn(maximum)
+    # let's normalize to keep the final score down
+    maximum = max(freqDict.values())
+    for term in freqDict.keys():
+      freqDict[term] = weight_fn(freqDict.get(term)) / weight_fn(maximum)
+
+    windows = []
+    for i in xrange( len(terms) - windowSize ):
+      window = []
+      for sentence in terms[i:i+windowSize]:
+        window += sentence
+      windows.append( window )
+    print windows
+
+    for window in windows:
+      if len(window)==0:
+        continue
       # divisi
       vec = divisi2.DenseVector(np.zeros((150,)))
-      for term in sentence:
+      for term in window:
         if term in assocmat.row_labels:
           vec += assocmat.row_named(term) * freqDict.get(term)
   
