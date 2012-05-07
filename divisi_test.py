@@ -50,8 +50,9 @@ def main():
       concept_vec = assocmat.row_named(concept)
       print '\t' + concept + ':', str( concept_vec.dot(vec) )
 
+# not sure what to do here; sqrt is probably better for emotion, inverse sqrt better for medical/technical evaluation
 def weight_fn(freq):
-  return math.pow(float(freq), 1.0/2)
+  return math.sqrt(freq)
 
 def exit():
   print 1/0
