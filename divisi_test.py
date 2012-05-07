@@ -39,9 +39,9 @@ def main():
     for term in terms:
       freqDict[term] = freqDict.get(term, 0) + 1
     # let's normalize to keep the final score down
-    freqDict = {term : weight_fn(freqDict.get(term)) / weight_fn(max(freqDict.values())) \
-                for term in freqDict.keys()}
-  
+    maximum = max(freqDict.values())
+    for term in freqDict.keys():
+      freqDict[term] = weight_fn(freqDict.get(term)) / weight_fn(maximum)
     # divisi
     vec = divisi2.DenseVector(np.zeros((150,)))
     for term in terms:
