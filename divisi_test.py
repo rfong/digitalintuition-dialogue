@@ -34,7 +34,7 @@ def main():
   concepts = [ (line.split(';')[0].split(','), line.split(';')[1].split(',')) for line in concepts]
   print concepts
   
-  # weight terms by function of frequency
+  # weight terms by function of frequency  
   for group, terms in allTerms.iteritems():
     print group
     freqDict = {}
