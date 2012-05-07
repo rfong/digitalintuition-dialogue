@@ -47,13 +47,16 @@ for group in term.items():
     if term in assocmat.row_labels:
       vec += assocmat.row_named(term) * 1.0
 
+vec = divisi2.DenseVector(np.zeros((150,)))
 happy = assocmat.row_named('happy')
 sad = assocmat.row_named('sad')
 
-similarHappy = happy.dot(vec)
-similarSad = sad.dot(vec)
-
-print "Happy Similarity: " + str(similarHappy)
-print "Sad Similarity: " + str(similarSad)
-
+for group in terms:
+  for term in terms.get(group):
+    if term in assocmat.row_labels:
+      vec += assocmat.row_named(term) * 1.0
+  similarHappy = happy.dot(vec)
+  similarSad = sad.dot(vec)
+  print str(group) + " Happy Similarity: " + str(similarHappy)
+  print str(group) + " Sad Similarity: " + str(similarSad)
 
