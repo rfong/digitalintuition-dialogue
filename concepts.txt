@@ -1,1 +1,3 @@
 happy,joy,love;sad
+empathy;apathy
+hope;despair
