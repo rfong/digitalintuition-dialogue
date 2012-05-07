@@ -35,21 +35,17 @@ def main():
   # weight terms by function of frequency  
   for group, terms in allTerms.iteritems():
     print group
-    for sentence in terms:
-      freqDict = {}
-      if len(sentence)==0:
-        continue
-      for term in sentence:
-        freqDict[term] = freqDict.get(term, 0) + 1
-      # let's normalize to keep the final score down
-      maximum = max(freqDict.values())
-      for term in freqDict.keys():
-        freqDict[term] = weight_fn(freqDict.get(term)) / weight_fn(maximum)
-      # divisi
-      vec = divisi2.DenseVector(np.zeros((150,)))
-      for term in sentence:
-        if term in assocmat.row_labels:
-          vec += assocmat.row_named(term) * freqDict.get(term)
+    for term in terms:
+      freqDict[term] = freqDict.get(term, 0) + 1
+    # let's normalize to keep the final score down
+    maximum = max(freqDict.values())
+    for term in freqDict.keys():
+      freqDict[term] = weight_fn(freqDict.get(term)) / weight_fn(maximum)
+    # divisi
+    vec = divisi2.DenseVector(np.zeros((150,)))
+    for term in terms:
+      if term in assocmat.row_labels:
+        vec += assocmat.row_named(term) * freqDict.get(term)
   
       for concept in concepts:
         concept_vec = np.zeros((150,))
