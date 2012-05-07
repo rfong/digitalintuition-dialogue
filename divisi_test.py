@@ -37,9 +37,10 @@ for term in allTerms:
   else:
     freqDict[term] = 1
   numUniqueTerms += 1
-#freqDict = {term:(freqDict.get(term)/numUniqueTerms)
+freqDict = {term:(freqDict.get(term)/numUniqueTerms) for term in freqDict.keys()}
+print freqDict
 
-# anjali
+# divisi
 vec = divisi2.DenseVector(np.zeros((150,)))
 for group in term.items():
   for term in group:
