@@ -30,9 +30,7 @@ def main():
         allTerms['patients'] += line_terms
 
   concepts = [line.strip() for line in open('concepts.txt', 'r').readlines()]
-  print concepts
   concepts = [ (line.split(';')[0].split(','), line.split(';')[1].split(',')) for line in concepts]
-  print concepts
   
   # weight terms by function of frequency
   for group, terms in allTerms.iteritems():
