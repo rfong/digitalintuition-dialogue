@@ -23,12 +23,16 @@ def main():
       line = line.strip()
       hash = line.split('#')[-1]
       line_terms = nltk.word_tokenize( line.split('#')[0] )
+      # todo - fix this so we can handle any hash...
       if hash[0]=='D':
         allTerms['doctors'] += line_terms
       elif hash[0]=='P':
         allTerms['patients'] += line_terms
 
   concepts = [line.strip() for line in open('concepts.txt', 'r').readlines()]
+  print concepts
+  concepts = [ (line.split(';')[0].split(','), line.split(';')[1].split(',')) for line in concepts]
+  print concepts
   
   # weight terms by function of frequency
   for group, terms in allTerms.iteritems():
@@ -47,8 +51,12 @@ def main():
         vec += assocmat.row_named(term) * freqDict.get(term)
 
     for concept in concepts:
-      concept_vec = assocmat.row_named(concept)
-      print '\t' + concept + ':', str( concept_vec.dot(vec) )
+      concept_vec = np.zeros((150,))
+      for c in concept[0]:
+        concept_vec += assocmat.row_named(c)
+      for c in concept[1]:
+        concept_vec += assocmat.row_named(c)
+      print '\t' + str(concept) + ':', str( concept_vec.dot(vec) )
 
 # not sure what to do here; sqrt is probably better for emotion, inverse sqrt better for medical/technical evaluation
 def weight_fn(freq):
