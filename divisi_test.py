@@ -3,6 +3,7 @@ import divisi2
 import numpy as np
 import nltk
 import math
+import csv
 
 def main():
   assoc_matrix = divisi2.network.conceptnet_assoc('en')
@@ -32,13 +33,61 @@ def main():
   concepts = [line.strip() for line in open('concepts.txt', 'r').readlines()]
   concepts = [ (line.split(';')[0].split(','), line.split(';')[1].split(',')) for line in concepts]
   
-
-  windowSize = 10
-  # weight terms by function of frequency
+  doctorTerms = allTerms.get('doctors')
+  patientTerms = allTerms.get('patients')
+  biggestWindow = min(len(doctorTerms), len(patientTerms))
+  smallestWindow = 10
+  windowStep = biggestWindow/100
+  print biggestWindow
+  #windowSizes = range(smallestWindow, biggestWindow, windowStep)
+  windowSizes = [1000]
+  endSize = (biggestWindow/windowStep - 1)*windowStep + smallestWindow
   for group, terms in allTerms.iteritems():
     print group
+    # weight terms by function of frequency
+    freqDict = getWeights(terms)
+    
+    for windowSize in windowSizes:
+      newfile = open(group+str(windowSize)+'.csv', "w")
+      writer = csv.writer(newfile, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
+      writer.writerow(["Happy/Sad", "Empathy/Apathy", "Hope/Despair"])
 
-    # get all frequencies
+      windows = []
+      for i in xrange( len(terms) - windowSize ):
+        window = []
+        for sentence in terms[i:i+windowSize]:
+          window += sentence
+        windows.append( window )
+
+      for window in windows:
+        if len(window)==0:
+          continue
+        # divisi
+        vec = divisi2.DenseVector(np.zeros((150,)))
+        for term in window:
+          if term in assocmat.row_labels:
+            vec += assocmat.row_named(term) * freqDict.get(term)
+
+        similarities = []
+        for concept in concepts:
+          concept_vec = np.zeros((150,))
+          for c in concept[0]:
+            concept_vec += assocmat.row_named(c)
+          for c in concept[1]:
+            concept_vec += assocmat.row_named(c)
+          similarities.append(str(concept_vec.dot(vec)))
+        #print similarities
+        writer.writerow(similarities)
+          #print '\t' + str(concept) + ':', str( concept_vec.dot(vec) )
+        #print ''
+      writer.close()
+
+# not sure what to do here; sqrt is probably better for emotion, inverse sqrt better for medical/technical evaluation
+def weight_fn(freq):
+  return math.sqrt(freq)
+
+def getWeights(terms):
+  # get all frequencies
     freqDict = {}
     for sentence in terms:
       for term in sentence:
@@ -47,36 +96,7 @@ def main():
     maximum = max(freqDict.values())
     for term in freqDict.keys():
       freqDict[term] = weight_fn(freqDict.get(term)) / weight_fn(maximum)
-   
-    windows = []
-    for i in xrange( len(terms) - windowSize ):
-      window = []
-      for sentence in terms[i:i+windowSize]:
-        window += sentence
-      windows.append( window )
-    print windows
-
-    for window in windows:
-      if len(window)==0:
-        continue
-      # divisi
-      vec = divisi2.DenseVector(np.zeros((150,)))
-      for term in window:
-        if term in assocmat.row_labels:
-          vec += assocmat.row_named(term) * freqDict.get(term)
-  
-      for concept in concepts:
-        concept_vec = np.zeros((150,))
-        for c in concept[0]:
-          concept_vec += assocmat.row_named(c)
-        for c in concept[1]:
-          concept_vec += assocmat.row_named(c)
-        print '\t' + str(concept) + ':', str( concept_vec.dot(vec) )
-      print ''
-
-# not sure what to do here; sqrt is probably better for emotion, inverse sqrt better for medical/technical evaluation
-def weight_fn(freq):
-  return math.sqrt(freq)
+    return freqDict
 
 def exit():
   print 1/0
