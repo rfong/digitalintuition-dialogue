@@ -5,6 +5,9 @@ import nltk
 import math
 import csv
 
+results_dir = 'results/'
+corpus_dir = 'GMIAS_CMU/'
+
 def main():
   assoc_matrix = divisi2.network.conceptnet_assoc('en')
   assocU, assocS, assocV = assoc_matrix.normalize_all().svd(k=150)
@@ -13,11 +16,11 @@ def main():
   print "finished constructing conceptnet matrix"
   
   # clear old output files (if we changed window range, there will be junk)
-  os.system( "rm -f `ls | grep -E 'patients|doctors[0-9]+.*'`" )
+  os.system( "rm -f `ls | grep -E '" + results_dir + "patients|doctors[0-9]+.*'`" )
  
   # input
   input_files = []
-  for dirname, dirnames, filenames in os.walk('GMIAS_CMU/'):
+  for dirname, dirnames, filenames in os.walk(corpus_dir):
     for filename in filenames:
       if filename.split('.')[-1] == 'parsed':
         input_files.append( os.path.join(dirname, filename) )
@@ -39,7 +42,13 @@ def main():
 
   global concepts
   concepts_raw = [line.strip() for line in open('concepts.txt', 'r')]
-  concepts = [ (line.split(';')[0].split(','), line.split(';')[1].split(',')) for line in concepts_raw]
+  concepts = []
+  for line in concepts_raw:
+    concept = line.split(';')
+    concepts.append( ( \
+      concept[0].split(',') if concept[0]!='' else [], \
+      concept[1].split(',') if concept[1]!='' else [] \
+      ) )
   # for printing later
   concepts_raw = [ line.replace(',', ' ').replace(';', ' / ') for line in concepts_raw ]
 
@@ -56,7 +65,7 @@ def main():
       # weight terms by function of frequency
       freqDict = getWeights(terms, windowSize)
 
-      newfile = open(group+str(windowSize)+'.csv', "w")
+      newfile = open(results_dir+group+str(windowSize)+'.csv', "w")
       writer = csv.writer(newfile, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
       writer.writerow( concepts_raw )
 

@@ -1,3 +1,11 @@
 happy,joy,love;sad
 empathy;apathy
 hope;despair
+agree;disagree
+compliment,praise;criticize
+calm;concern,fear,anxiety
+comfort;pain,discomfort
+surprise,awe;
+satisfaction;
+;frustration,anger
+;annoyance
