@@ -47,18 +47,18 @@ def main():
     for term in freqDict.keys():
       freqDict[term] = weight_fn(freqDict.get(term)) / weight_fn(maximum)
 
+    # construct rolling windows of sentences
     windows = []
     for i in xrange( len(terms) - windowSize ):
       window = []
       for sentence in terms[i:i+windowSize]:
         window += sentence
       windows.append( window )
-    print windows
 
+    # divisi!
     for window in windows:
       if len(window)==0:
         continue
-      # divisi
       vec = divisi2.DenseVector(np.zeros((150,)))
       for term in window:
         if term in assocmat.row_labels:
