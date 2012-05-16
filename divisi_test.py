@@ -59,6 +59,10 @@ def main():
 
   for group, terms in allTerms.iteritems():
     print "calculating for %s..."%group
+    best_peakiness_avg = {'windowSize':-1, 'peakinesses':[sys.float_info.min]}
+    best_peakiness_by_concept = []
+    for concept_set in concepts:
+      best_peakiness_by_concept.append({'windowSize':-1, 'peakiness':sys.float_info.min})
     
     for windowSize in windowSizes:
       verbose('  ' + str(windowSize))
@@ -105,54 +109,46 @@ def main():
           scores[concepts.index(concept_set)].append(score)
         writer.writerow(scores_this_window)
         scores.append(scores_this_window)
-          #print '\t' + str(concept) + ':', str( concept_vec.dot(vec) )
-        #print ''
 
         # next rolling window
         window = window[first_sentence_len:] + terms[i+windowSize]
         first_sentence_len = len(terms[i])
 
-      print peakiness(scores, windowSize)
+      pk = peakiness(scores, windowSize)
+      verbose(pk)
+      if avg(pk) > avg(best_peakiness_avg['peakinesses']):
+        best_peakiness_avg['peakinesses'] = pk
+        best_peakiness_avg['windowSize'] = windowSize
+      for concept_set in concepts:
+        c = concepts.index(concept_set)
+        if pk[c] > best_peakiness_by_concept[c]['peakiness']:
+          best_peakiness_by_concept[c]['peakiness'] = pk[c]
+          best_peakiness_by_concept[c]['windowSize'] = windowSize
+          
   print "done."
+  print 'best peakiness by average %s'%str(best_peakiness_avg)
+  print 'best peakiness by concept'
+  for concept_set in concepts_raw:
+    print concept_set, str(best_peakiness_by_concept[concepts_raw.index(concept_set)])
 
 def peakiness(L, windowSize):
   global concepts
   peakinesses = []
   for concept_set in concepts:
     c = concepts.index(concept_set)
-    # highest maxima
-    maxima0 = max( L[c] )  # ok we might have to find all instances
-    # 2nd highest maxima at least windowSize away
-    i0 = L[c].index(maxima0)
-    peak_left = find_first_peak( list(reversed( indexed_list(L[c])[:i0] )) )
-    i_lo = min( peak_left, max(i0-windowSize, 0) )
-    peak_right = find_first_peak( indexed_list(L[c])[i0+1:] )
-    i_hi = max( peak_right, min(i0+windowSize, len(L[c])-1) )
-    maxima1 = min(L[c])
-    i1 = -1
-    # look both ways, kids
-    if i_lo > 0:
-      for (s,i) in reversed(indexed_list(L[c])[:i_lo]):
-        if s > maxima1:
-          maxima1 = s
-          i1 = i
-    if i_hi < len(L[c])-1:
-      for (s,i) in indexed_list(L[c])[i_hi:]:
-        if s > maxima1 or \
-            (s == maxima1 and i-i0 < i0-i1): # distance tiebreaker
-          maxima1 = s
-          i1 = i
+    # two highest maxima
+    peaks = [ (L[c][i], i) for i in find_peak_indices(indexed_list(L[c])) ]
+    maxima0 = max(peaks, key=lambda t: t[0])
+    peaks.pop( peaks.index(maxima0) )
+    maxima1 = max(peaks, key=lambda t: t[0])
     # lowest val between the two peaks
-    minima = min(L[c][ min(i0,i1)+1 : max(i0,i1) ])
-    minima = min(maxima0,maxima1) - minima # just use amplitude, to avoid divide by 0 errs
+    minima = min(L[c][ min(maxima0[1], maxima1[1])+1 : max(maxima0[1], maxima1[1]) ])
     # done
-    peakinesses.append( min(maxima0,maxima1) / minima )
+    peakinesses.append( min(maxima0[0], maxima1[0]) / minima ) # div/0 errors...too lazy to normalize
   return peakinesses
 
-# index of first peak; list L is indexed
-def find_first_peak(L):
-  if len(L)==0:
-    return None
+def find_peak_indices(L):
+  peaks = []
   prev = L[0][0]
   foundPosDeriv = False
   for (x,i) in L:
@@ -161,12 +157,13 @@ def find_first_peak(L):
         foundPosDeriv = True
     else:
       if sign(x-prev) < 0:
-        return i-1
+        peaks.append(i-1)
+        foundPosDeriv = False
     if i==L[-1][1] and sign(x-prev) > 0: # ends on + deriv
-      return i
+      peaks.append(i)
     prev = x
-  return None
-  
+  return peaks
+
 def get_weights(terms, windowSize):
   global assocmat
   global concepts
@@ -185,13 +182,18 @@ def get_weights(terms, windowSize):
 def weight_fn(freq):
   return math.sqrt(freq)
 
-def verbose(str):
-  if options.verbose:
-    print str
+def avg(L):
+  if len(L)==0:
+    return None
+  return sum(L)/len(L)
 def sign(x):
   return cmp(x,0)
 def indexed_list(L):
   return zip( L, xrange(len(L)) )
+
+def verbose(str):
+  if options.verbose:
+    print str
 def exit():
   print 1/0
 
@@ -199,19 +201,22 @@ def exit():
 class UnitTest:
 
   def __init__(self):
-    self.find_first_peak()
+    self.find_peak_indices()
 
-  def find_first_peak(self):
+  def find_peak_indices(self):
     data = [ \
-      ([1,0,1,0], 2),
-      ([0,2,1], 1),
-      ([-1,0,1,2,0], 3),
-      ([3,2,1], None),
-      ([3,2,1,2], 3),
+      ([1,0,1,0], [2]),
+      ([1,0,1,0], [2]),
+      ([0,2,1], [1]),
+      ([-1,0,1,2,0], [3]),
+      ([3,2,1], []),
+      ([3,2,1,2], [3]),
+      ([3,2,1,2,0,1], [3,5])
       ]
     for (L,a) in data:
-      assert find_first_peak(indexed_list([ float(x) for x in L ])) == a, \
-        "find_first_peak(%s) != %s"%(str(L),str(a))
+      result = find_peak_indices(indexed_list([ float(x) for x in L ]))
+      assert result == a, \
+        "find_peak_indices(%s) should output %s, instead outputs %s"%(str(L),str(a),str(result))
 
 ###
 parser = OptionParser()
